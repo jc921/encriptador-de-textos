@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador De Textos</title>
+    <!-- enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- icono de la pagina -->
+    <link rel="shortcut icon" href="./img/icon-encript.png" type="image/x-icon">
+
+    <!-- cdn sweetalert 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+</head>
+<body>
+    <!-- creamos el contenedor de mas afuera -->
+    <div class="container">
+        <div class="logo">
+            <img src="./img/Logo.png" alt="">
+        </div>
+        <!-- creamos nuestro elemento que es el campo texto
+        por el cual el usuario va a digitar -->
+        <div class="encriptar">
+            <textarea name="texto" 
+            class="texto" 
+            id="texto" 
+            cols="30" rows="10"
+            placeholder="Ingrese el texto aqui!"></textarea>
+        </div>
+
+        <!-- creamos el contenedor que mostrara las condiciones
+        en las que el usuario debe digitar el texto -->
+        <div class="terminos">
+            <p>solo letras minusculas y sin asento</p>
+        </div>
+
+        <!-- creamos el contenedor para los botones que cumpliran 
+        la funcion de encriptar y desencriptar el texto -->
+        <div class="botones">
+            <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+        </div>
+
+        <!-- creamos el contenedor para mostrar iteractividad con el usuario
+        atravez de imagenes y textos que cambiaran segun lo digitado  -->
+        <div class="encriptado">
+            <img src="./img/Muno.png" alt="" id="picture">
+            <!-- este es un subcontenedor que contendra un subtitulo -->
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
+                <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <!-- <textarea name="mensaje" 
+                id="mensaje" 
+                cols="30" 
+                rows="10" 
+                class="mensaje"></textarea> -->
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
