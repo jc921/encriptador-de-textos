@@ -28,7 +28,7 @@ function encriptar(){
             document.getElementById("texto").value = textoCifrado; // le asignamos el comportamiento de la funcion por medio del id 
             tituloMensaje.textContent = "Texto encriptado con exito"; // mostramos un mensaje 
             parrafo.textContent = ""; // limpiamos el parrafo
-            picture.src = "./img/muno.png";
+            picture.src = "./img/Muno.png";
     
         } else {
             picture.src = "./img/mdos.png";
